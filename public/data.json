@@ -2,7 +2,7 @@
     {
     "_id":1,
     "name":"Car Engine",
-    "description":"We have imported this engine from abroad after physical inspection & quality check.We offer 6 months service warranty and attractive price discount in exchange of used engines.We provide full installation and servicing of car engines at our shop also if you need we can send car engine by courier at your place withour trained mechanics who will perform the installation.",
+    "description":"We have imported this engine from abroad after physical inspection & quality check.We offer 6 months service warranty and attractive price discount in exchange of used engines.",
     "img":"https://media.istockphoto.com/photos/car-engine-picture-id520977101?b=1&k=20&m=520977101&s=170667a&w=0&h=e8ELZhGnsS75dB3eS_8mpjpz9V4zjRGJJ6GN015oZxs=",
     "availableQuantity":4000,
     "minQuantity":100,
@@ -34,23 +34,5 @@
     "availableQuantity":9978,
     "minQuantity":500,
     "price":255
-    },
-    {
-    "_id":5,
-    "name":"Head Lights",
-    "description":"These headlights are attached to the front end of the vehicle. They allow the driver to see the roadway in the dark, while also indicating to other drivers that a car is present. There are types of lights used in cars and each has its own function.",
-    "img":"https://www.theengineerspost.com/wp-content/uploads/2022/02/Head-Lights.jpg?ezimgfmt=ng:webp/ngcb19",
-    "availableQuantity":14000,
-    "minQuantity":600,
-    "price":379
-    },
-    {
-    "_id":6,
-    "name":"Radiator",
-    "description":"The radiator sits right behind your car’s front grille. It is located at the center of the vehicle’s cooling system that monitors and regulates the temperature of the engine and prevents it from overheating.",
-    "img":"https://3.imimg.com/data3/YN/RN/GLADMIN-96212/car-radiator-500x500.jpg",
-    "availableQuantity":7000,
-    "minQuantity":300,
-    "price":790
     }
     ]
