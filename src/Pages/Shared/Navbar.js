@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from '../../picture/logo/logo3.png';
 const Navbar = () => {
     const navbar = <>
-        <li><Link to='/home'>Home</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='blog'>Blog</Link></li>
-        <li><Link to='/login'>Login</Link></li>
+        <li><Link to='/home'>HOME</Link></li>
+        <li><Link to='/about'>ABOUT US</Link></li>
+        <li><Link to='blog'>BLOG</Link></li>
+        <li><Link to='/login'>LOGIN</Link></li>
     </>
     return (
         <div className="navbar bg-base-100">

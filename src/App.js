@@ -4,6 +4,7 @@ import './App.css';
 import About from './Pages/About/About';
 import Blog from './Pages/Blog/Blog';
 import Home from './Pages/Home/Home';
+import ProductDetails from './Pages/Home/ProductDetails';
 import Login from './Pages/Login/Login';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
@@ -17,6 +18,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/product/:id' element={<ProductDetails></ProductDetails>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
