@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import pic from '../../../picture/pic1.jpg';
 import './AboutUs.css';
 const AboutUs = () => {
@@ -12,7 +13,7 @@ const AboutUs = () => {
                     range of benefits as standard has evolved
                     over time and, today, drivers can leave the forecourt with total reassurance and
                     peace of mind.</p>
-                    <button className='btn btn-primary mt-7'>Explore Now</button>
+                    <Link to='/about'><button className='btn btn-primary mt-7'>Explore Now</button></Link>
             </div>
             <div className='name'>
                 <img src={pic} alt="" />
