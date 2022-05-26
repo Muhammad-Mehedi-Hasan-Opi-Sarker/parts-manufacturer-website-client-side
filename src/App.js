@@ -8,6 +8,7 @@ import ProductDetails from './Pages/Home/ProductDetails';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register';
 import PageEmpty from './Pages/PageEmpty/PageEmpty';
+import RequierAuth from './Pages/RequierAuth/RequierAuth';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
 function App() {
@@ -20,7 +21,11 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/*' element={<PageEmpty></PageEmpty>}></Route>
-        <Route path='/product/:id' element={<ProductDetails></ProductDetails>}></Route>
+        <Route path='/product/:id' element={
+          <RequierAuth>
+            <ProductDetails></ProductDetails>
+          </RequierAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
