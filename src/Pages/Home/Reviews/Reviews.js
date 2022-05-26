@@ -5,11 +5,6 @@ import picture2 from '../../../picture/reviews/picture13.jpg';
 import picture11 from '../../../picture/reviews/picture11.jpg';
 import picture4 from '../../../picture/reviews/picture4.jpg';
 import picture5 from '../../../picture/reviews/picture5.jpg';
-import picture6 from '../../../picture/reviews/picture6.jpg';
-import picture7 from '../../../picture/reviews/picture7.jpg';
-import picture8 from '../../../picture/reviews/picture8.jpg';
-import picture9 from '../../../picture/reviews/picture9.jpg';
-
 const Reviews = () => {
     return (
         <div>
@@ -78,72 +73,6 @@ const Reviews = () => {
                         <h2 className="card-title">Harry Protal</h2>
                         <p>I import products to my country every year from now on.
                             The products here are very good poducts .</p>
-
-                    </div>
-                </div>
-                <div style={{ width: '240px', height: '300px', padding: '9px' }} className="card opi w-96 bg-primary text-primary-content">
-                    <div className="avatar">
-                        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                            <img src={picture6} alt='' />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <h2 className="card-title">Ronaldo</h2>
-                        <p>I import products to my country every year from now on.
-                            The products here are very good</p>
-
-                    </div>
-                </div>
-                <div style={{ width: '240px', height: '300px', padding: '9px' }} className="card opi w-96 bg-primary text-primary-content">
-                    <div className="avatar">
-                        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                            <img src={picture6} alt='' />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <h2 className="card-title">Deniel</h2>
-                        <p>The products here are very good. They deliver the product very
-                            quickly. I already buy the products.</p>
-
-                    </div>
-                </div>
-                <div style={{ width: '240px', height: '300px', padding: '9px' }} className="card opi w-96 bg-primary text-primary-content">
-                    <div className="avatar">
-                        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                            <img src={picture7} alt='' />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <h2 className="card-title">Robin</h2>
-                        <p>The products here are of very high quality. People in
-                            my country love this company's products.</p>
-
-                    </div>
-                </div>
-                <div style={{ width: '240px', height: '300px', padding: '9px' }} className="card opi w-96 bg-primary text-primary-content">
-                    <div className="avatar">
-                        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                            <img src={picture8} alt='' />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <h2 className="card-title">Yeadov</h2>
-                        <p>I am very proud to work with them. They are v
-                            ery careful about their products. That's why I b
-                            uy products from their work</p>
-
-                    </div>
-                </div>
-                <div style={{ width: '240px', height: '300px', padding: '9px' }} className="card opi w-96 bg-primary text-primary-content">
-                    <div className="avatar">
-                        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                            <img src={picture9} alt='' />
-                        </div>
-                    </div>
-                    <div className="card-body">
-                        <h2 className="card-title">Hasan</h2>
-                        <p>The products of this company are of very high quality. I regular
-                            ly buy these products from now on. You have to trust them</p>
 
                     </div>
                 </div>
