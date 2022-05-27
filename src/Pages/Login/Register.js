@@ -2,6 +2,7 @@ import React from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialLogin from './SocialLogin/SocialLogin';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -12,6 +13,10 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+
+    if(loading){
+        return <button class="btn btn-square loading"></button>
+    }
 
     let errorElement;
     if (error) {
@@ -41,6 +46,7 @@ const Register = () => {
                 <input type="submit" className='btn btn-primary' value={'Login'} />
                 <p>Have Account <Link to='/login'><span className='text-primary'>Login Please</span></Link></p>
             </form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
