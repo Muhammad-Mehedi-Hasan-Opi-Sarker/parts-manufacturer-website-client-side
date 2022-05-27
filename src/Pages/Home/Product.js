@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                     <h3 className='text-xl'>Minimum Order Quantity: {minQuantity}</h3>
                     <h3 className='text-xl'>Price: ${price}</h3>
                     <div className="card-actions justify-end">
-                        <button onClick={()=>{handleServiceDetails(_id)}} className="btn btn-primary">button</button>
+                        <button onClick={()=>{handleServiceDetails(_id)}} className="btn btn-primary">Order</button>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,16 @@
     "img":"https://media.istockphoto.com/photos/car-engine-picture-id520977101?b=1&k=20&m=520977101&s=170667a&w=0&h=e8ELZhGnsS75dB3eS_8mpjpz9V4zjRGJJ6GN015oZxs=",
     "availableQuantity":4000,
     "minQuantity":100,
-    "price":3000
+    "price":3000,
+    "order":[
+        "100",
+        "200",
+        "300",
+        "400",
+        "500",
+        "600",
+        "700"
+    ]
     },
     {
     "_id":2,
@@ -15,7 +24,16 @@
     "img":"https://media.istockphoto.com/photos/tower-of-three-car-wheels-and-1-wheel-on-the-side-picture-id172453002?k=20&m=172453002&s=170667a&w=0&h=793YwanYLOxdf87BBZo_MPIzz6vQkVH_mfg9Fa5pNgk=",
     "availableQuantity":10000,
     "minQuantity":500,
-    "price":500
+    "price":500,
+    "order":[
+        "500",
+        "550",
+        "600",
+        "1000",
+        "1500",
+        "3000",
+        "4000"
+    ]
     },
     {
     "_id":3,
@@ -24,7 +42,16 @@
     "img":"https://m.media-amazon.com/images/I/71T9IGq-ehL._AC_SL1000_.jpg",
     "availableQuantity":15000,
     "minQuantity":500,
-    "price":120
+    "price":120,
+    "order":[
+        "500",
+        "600",
+        "1000",
+        "2000",
+        "4000",
+        "5000",
+        "6000"
+    ]
     },
     {
     "_id":4,
@@ -33,6 +60,15 @@
     "img":"https://www.drivespark.com/img/2018/03/car-bumper-crash-guard-banned-indian-government-including-bull-bars-for-suvs-7-1520922028.jpg",
     "availableQuantity":9978,
     "minQuantity":500,
-    "price":255
+    "price":255,
+    "order":[
+        "500",
+        "600",
+        "700",
+        "800",
+        "850",
+        "950",
+        "1500"
+    ]
     }
     ]
