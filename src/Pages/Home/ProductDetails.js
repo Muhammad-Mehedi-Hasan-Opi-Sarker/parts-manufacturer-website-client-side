@@ -12,7 +12,7 @@ const ProductDetails = () => {
     return (
         <div>
              <h1 className='text-3xl text-primary'>You can choose Quantity</h1>
-            <div  className='px-12 mb-16 mt-16 gird justify-items-center lg:ml-32'>
+            <div  className='px-12 mb-16 mt-16 gird justify-items-center lg:ml-24'>
                 <div className="card card-compact w-fit bg-base-100 shadow-xl">
                     <figure><img style={{height:'300px',width:'300px'}} src={product.img} alt="Shoes" /></figure>
                     <div className="card-body">
