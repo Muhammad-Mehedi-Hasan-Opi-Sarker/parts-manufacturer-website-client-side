@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyOrder = () => {
+    const [reload,setReload]= useState(false);
     const [user] = useAuthState(auth);
     const [myorder, setOrder] = useState([]);
     useEffect(() => {
@@ -11,7 +13,22 @@ const MyOrder = () => {
                 .then(res => res.json())
                 .then(data => setOrder(data))
         }
-    }, [])
+    }, [reload])
+
+    const handleDelete =id=>{
+        const proceed = window.confirm('Are you sure')
+        if(proceed){
+            const url = `http://localhost:5000/booking/${id}`;
+            fetch(url,{
+                method: 'DELETE'
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data);
+                setReload(!reload);
+            })
+        }
+    }
     return (
 
         <div class="overflow-x-auto">
@@ -24,16 +41,20 @@ const MyOrder = () => {
                         <th>Email</th>
                         <th>My Product</th>
                         <th>Order Quantity</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         myorder.map((my,index)=><tr>
-                            <th>{index}</th>
+                            <th>{index +1}</th>
                             <td>{my.customerName}</td>
                             <td>{my.customerEmail}</td>
                             <td>{my.productName}</td>
                             <td>{my.order}</td>
+                            <td><button className='btn bg-danger'>Payment</button></td>
+                            <td><button  onClick={()=>handleDelete(my.customerEmail)} className='btn bg-danger'>Delete</button></td>
                         </tr>)
                     }
                     

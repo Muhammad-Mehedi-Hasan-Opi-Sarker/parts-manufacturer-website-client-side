@@ -16,6 +16,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Dhashboard from './Pages/Dhashboard/Dhashboard';
 import MyProfile from './Pages/Dhashboard/MyProfile';
 import MyOrder from './Pages/Dhashboard/MyOrder';
+import AddReview from './Pages/Dhashboard/AddReview';
+import MyProtfolio from './Pages/MyProtfolio/MyProtfolio';
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/*' element={<PageEmpty></PageEmpty>}></Route>
         <Route path='/product/:id' element={
@@ -39,6 +42,7 @@ function App() {
         }>
           <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path='myorder' element={<MyOrder></MyOrder>}></Route>
+          <Route path='addreview' element={<AddReview></AddReview>}></Route>
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
