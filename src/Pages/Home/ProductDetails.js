@@ -42,7 +42,7 @@ const ProductDetails = () => {
         })
             .then(response => response.json())
             .then(data => {
-                console.log('Success:', data);
+                toast(`successfuly booking ${name}` )
             })
             .catch((error) => {
                 console.error('Error:', error);
