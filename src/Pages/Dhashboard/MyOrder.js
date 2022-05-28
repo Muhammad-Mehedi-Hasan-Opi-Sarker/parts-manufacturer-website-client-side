@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyOrder = () => {
+    const navigate = useNavigate();
     const [reload,setReload]= useState(false);
     const [user] = useAuthState(auth);
     const [myorder, setOrder] = useState([]);
@@ -53,8 +54,8 @@ const MyOrder = () => {
                             <td>{my.customerEmail}</td>
                             <td>{my.productName}</td>
                             <td>{my.order}</td>
-                            <td><button className='btn bg-danger'>Payment</button></td>
-                            <td><button  onClick={()=>handleDelete(my.customerEmail)} className='btn bg-danger'>Delete</button></td>
+                            <td><Link to='/payment'><button className='btn bg-danger'>Payment</button></Link></td>
+                            <td><button onClick={()=>handleDelete(my.customerEmail)} className='btn bg-danger'>Delete</button></td>
                         </tr>)
                     }
                     

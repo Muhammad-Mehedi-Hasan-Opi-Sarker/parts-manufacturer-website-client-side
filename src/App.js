@@ -18,6 +18,7 @@ import MyProfile from './Pages/Dhashboard/MyProfile';
 import MyOrder from './Pages/Dhashboard/MyOrder';
 import AddReview from './Pages/Dhashboard/AddReview';
 import MyProtfolio from './Pages/MyProtfolio/MyProtfolio';
+import Payment from './Pages/Payment/Payment';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/myprotfolio' element={<MyProtfolio></MyProtfolio>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/payment' element={<Payment></Payment>}></Route>
         <Route path='/*' element={<PageEmpty></PageEmpty>}></Route>
         <Route path='/product/:id' element={
           <RequierAuth>
