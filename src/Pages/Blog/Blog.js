@@ -51,7 +51,7 @@ const Blog = () => {
                     <h2 class="card-title"><span className='text-primary'>Question 3: </span> What are the different ways to manage a state in a React application?</h2>
                     <p>When we talk about the state in our applications, it is important to be clear about what
                         kind of state is really important. <br />
-                        There are four main types of state you need to properly manage in your React apps:
+                        There are four main types of state  need to properly manage in  React apps:
                         <ul>
                             <li>1. Local state</li>
                             <li>2. Global state</li>

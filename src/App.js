@@ -11,6 +11,9 @@ import PageEmpty from './Pages/PageEmpty/PageEmpty';
 import RequierAuth from './Pages/RequierAuth/RequierAuth';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +33,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
