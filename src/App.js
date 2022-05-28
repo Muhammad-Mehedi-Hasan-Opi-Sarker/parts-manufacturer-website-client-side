@@ -13,6 +13,9 @@ import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Dhashboard from './Pages/Dhashboard/Dhashboard';
+import MyProfile from './Pages/Dhashboard/MyProfile';
+import MyOrder from './Pages/Dhashboard/MyOrder';
 
 function App() {
   return (
@@ -29,6 +32,14 @@ function App() {
             <ProductDetails></ProductDetails>
           </RequierAuth>
         }></Route>
+        <Route path='/dhashboard' element={
+          <RequierAuth>
+            <Dhashboard></Dhashboard>
+          </RequierAuth>
+        }>
+          <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path='myorder' element={<MyOrder></MyOrder>}></Route>
+        </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
       </Routes>

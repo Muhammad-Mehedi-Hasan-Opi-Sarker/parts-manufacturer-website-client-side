@@ -12,7 +12,10 @@ const Navbar = () => {
     const navbar = <>
         <li><Link to='/home'>HOME</Link></li>
         <li><Link to='/about'>ABOUT US</Link></li>
-        <li><Link to='blog'>BLOG</Link></li>
+        <li><Link to='/blog'>BLOG</Link></li>
+        {
+            user && <li><Link to='/dhashboard'>Dhashboard</Link></li>
+        }
         <li>{user ? <button onClick={logOut}>SIGOUT</button> : <Link to='/login'>LOGIN</Link>}</li>
     </>
     return (
