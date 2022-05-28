@@ -8,7 +8,7 @@ const Dhashboard = () => {
                 <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
                     <h1 className='text-primary text-2xl font-bold'>Dhashboard</h1>
-                    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+
                     <Outlet></Outlet>
                 </div>
                 <div class="drawer-side">
