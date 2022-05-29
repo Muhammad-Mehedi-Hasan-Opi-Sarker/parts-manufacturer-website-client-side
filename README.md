@@ -1,5 +1,22 @@
 # Getting Started with Create React App
 
+# Project Name 
+parts-manufacturer
+
+# description
+This website is primarily for car parts dealers. With this website dealers from different countries will be able to buy car parts. Here everyone can buy car parts in a very good way.
+# Live Website Link
+
+# server site link
+
+# Below website features.
+- This project use in Mongodb and heroku.
+- Home page show some things products.
+- Any user can give a review.
+- Users can easily order products.
+- All users data will saved in database.
+- firebase, react firebase hooks, react router etc.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
