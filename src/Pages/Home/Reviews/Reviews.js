@@ -10,7 +10,6 @@ import { toast } from 'react-toastify';
 const Reviews = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        console.log(data)
         toast("Thank's for sent email and phone number")
     };
     return (
