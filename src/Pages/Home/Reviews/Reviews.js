@@ -6,9 +6,13 @@ import picture11 from '../../../picture/reviews/picture11.jpg';
 import picture4 from '../../../picture/reviews/picture4.jpg';
 import picture5 from '../../../picture/reviews/picture5.jpg';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 const Reviews = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data)
+        toast("Thank's for sent email and phone number")
+    };
     return (
         <div>
             <h1 className='text-3xl font-bold'>Customers Says</h1>
@@ -85,8 +89,8 @@ const Reviews = () => {
                 <p className='mb-5'>You may unsubscribe at any moment. For that purpose, please
                     find our contact info in the legal notice.</p>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input {...register("firstName")} type="text" placeholder="Your Name" className="input input-bordered input-primary w-full max-w-xs mb-2" /> <br />
-                    <input {...register("firstName")} type="email" placeholder="Your Email" className="input input-bordered input-primary w-full max-w-xs mb-2" /> <br />
+                    <input {...register("firstName")} type="number" placeholder="Your Phone" className="input input-bordered input-primary w-full max-w-xs mb-2" /> <br />
+                    <input {...register("secondName")} type="email" placeholder="Your Email" className="input input-bordered input-primary w-full max-w-xs mb-2" /> <br />
                     <input className='btn btn-primary' type="submit" value={'Submit'} />
                 </form>
             </div>
