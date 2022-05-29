@@ -5,7 +5,10 @@ import picture2 from '../../../picture/reviews/picture13.jpg';
 import picture11 from '../../../picture/reviews/picture11.jpg';
 import picture4 from '../../../picture/reviews/picture4.jpg';
 import picture5 from '../../../picture/reviews/picture5.jpg';
+import { useForm } from 'react-hook-form';
 const Reviews = () => {
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => console.log(data);
     return (
         <div>
             <h1 className='text-3xl font-bold'>Customers Says</h1>
@@ -79,10 +82,13 @@ const Reviews = () => {
             </div>
             <div className="mt-16 mb-16">
                 <h1 className='text-2xl font-bold mb-5'>Get our latest news and special sales</h1>
-                <p className='mb-5'>You may unsubscribe at any moment. For that purpose, please 
+                <p className='mb-5'>You may unsubscribe at any moment. For that purpose, please
                     find our contact info in the legal notice.</p>
-                <input type="text" placeholder="Email Addres" className="input input-bordered w-full max-w-xs" />
-                <button className="btn btn-primary ml-3">Get</button>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <input {...register("firstName")} type="text" placeholder="Your Name" className="input input-bordered input-primary w-full max-w-xs mb-2" /> <br />
+                    <input {...register("firstName")} type="email" placeholder="Your Email" className="input input-bordered input-primary w-full max-w-xs mb-2" /> <br />
+                    <input className='btn btn-primary' type="submit" value={'Submit'} />
+                </form>
             </div>
         </div>
     );
