@@ -4,6 +4,7 @@ const Review = () => {
     return (
         <div className='px-12 mb-32'>
             <h1>Review</h1>
+            
         </div>
     );
 };

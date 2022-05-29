@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import picture from '../../../src/picture/icon/profile1.png';
@@ -12,14 +12,14 @@ import { toast } from 'react-toastify';
 const MyProfile = () => {
     const [user, loading, error] = useAuthState(auth);
 
-    const handleUpdate =event=>{
+    const handleUpdate = event => {
         event.preventDefault();
         const education = event.target.education.value;
         const address = event.target.address.value;
         const phone = event.target.phone.value;
         const link = event.target.link.value;
-        
-        const update ={
+
+        const update = {
             education: education,
             address: address,
             phoneNumber: phone,
@@ -34,13 +34,21 @@ const MyProfile = () => {
         })
             .then(response => response.json())
             .then(data => {
-                toast('successfuly update' )
+                toast('successfuly update')
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
     }
-    
+    const [profile, setProfile] = useState([]);
+    useEffect(() => {
+        if (user) {
+            fetch(`http://localhost:5000/update?phoneNumber=${phone}`)
+                .then(res => res.json())
+                .then(data => setProfile(data))
+        }
+    }, [])
+
     return (
         <div className='mt-12 grid lg:grid-cols-2 sm:grid-cols-1'>
             <div className="card w-fit bg-base-100 shadow-xl">
@@ -57,7 +65,7 @@ const MyProfile = () => {
                     </div>
                     <div className='flex'>
                         <div><img style={{ height: '30px', width: '30px' }} src={edu} alt="" /></div>
-                        <div className='mr-16'><p>Education: </p></div>
+                        <div className='mr-16'><p>Education:{profile.education} </p></div>
                     </div>
                     <div className='flex'>
                         <div><img style={{ height: '30px', width: '30px' }} src={location} alt="" /></div>
@@ -69,7 +77,7 @@ const MyProfile = () => {
                     </div>
                     <div className='flex'>
                         <div><img style={{ height: '30px', width: '30px' }} src={link} alt="" /></div>
-                        <div className='mr-16'><p>Phone Number:  </p></div>
+                        <div className='mr-16'><p>Social Account:  </p></div>
                     </div>
 
                 </div>
