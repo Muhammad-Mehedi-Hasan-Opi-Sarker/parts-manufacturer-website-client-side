@@ -17,7 +17,7 @@ const AddReview = () => {
             customerReview: review,
             rating: rating
         };
-        fetch(`http://localhost:5000/review`, {
+        fetch(`https://safe-tor-70644.herokuapp.com/review`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

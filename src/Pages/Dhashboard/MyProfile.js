@@ -25,7 +25,7 @@ const MyProfile = () => {
             phoneNumber: phone,
             link: link
         };
-        fetch(`http://localhost:5000/update`, {
+        fetch(`https://safe-tor-70644.herokuapp.com/update`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const MyProfile = () => {
     const [profile, setProfile] = useState([]);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/update?phoneNumber=${phone}`)
+            fetch(`https://safe-tor-70644.herokuapp.com/update?phoneNumber=${phone}`)
                 .then(res => res.json())
                 .then(data => setProfile(data))
         }

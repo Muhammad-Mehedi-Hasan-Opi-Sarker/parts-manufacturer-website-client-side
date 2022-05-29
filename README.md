@@ -6,9 +6,9 @@ parts-manufacturer
 # description
 This website is primarily for car parts dealers. With this website dealers from different countries will be able to buy car parts. Here everyone can buy car parts in a very good way.
 # Live Website Link
-
+ https://parts-manufacturer-6301a.web.app
 # server site link
-
+ https://safe-tor-70644.herokuapp.com/product
 # Below website features.
 - This project use in Mongodb and heroku.
 - Home page show some things products.

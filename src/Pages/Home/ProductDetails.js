@@ -9,7 +9,7 @@ const ProductDetails = () => {
     const { id } = useParams();
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://safe-tor-70644.herokuapp.com/product/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -33,7 +33,7 @@ const ProductDetails = () => {
              order
         };
 
-        fetch(`http://localhost:5000/booking`, {
+        fetch(`https://safe-tor-70644.herokuapp.com/booking`, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',

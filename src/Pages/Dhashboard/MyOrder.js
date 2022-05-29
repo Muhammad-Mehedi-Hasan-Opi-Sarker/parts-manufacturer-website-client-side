@@ -10,7 +10,7 @@ const MyOrder = () => {
     const [myorder, setOrder] = useState([]);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?customerEmail=${user.email}`)
+            fetch(`https://safe-tor-70644.herokuapp.com/booking?customerEmail=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrder(data))
         }
@@ -19,7 +19,7 @@ const MyOrder = () => {
     const handleDelete =id=>{
         const proceed = window.confirm('Are you sure')
         if(proceed){
-            const url = `http://localhost:5000/booking/${id}`;
+            const url = `https://safe-tor-70644.herokuapp.com/booking/${id}`;
             fetch(url,{
                 method: 'DELETE'
             })
@@ -55,7 +55,7 @@ const MyOrder = () => {
                             <td>{my.productName}</td>
                             <td>{my.order}</td>
                             <td><Link to='/payment'><button className='btn bg-danger'>Payment</button></Link></td>
-                            <td><button onClick={()=>handleDelete(my.customerEmail)} className='btn bg-danger'>Delete</button></td>
+                            <td><button onClick={()=>handleDelete(my._id)} className='btn bg-danger'>Delete</button></td>
                         </tr>)
                     }
                     
