@@ -8,7 +8,7 @@ const Review = () => {
             .then(data => setReviews(data))
     }, [])
     return (
-        <div className='px-12 mb-32'>
+        <div className='lg:px-12 mb-32'>
             <h1>Review</h1>
             <div className='grid lg:grid-cols-3'>
             {

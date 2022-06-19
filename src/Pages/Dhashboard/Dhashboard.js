@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 const Dhashboard = () => {
     return (
-        <div className='px-12 mb-24'>
+        <div className='lg:px-12 mb-24'>
             <div class="drawer drawer-mobile">
                 <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">

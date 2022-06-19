@@ -51,7 +51,7 @@ const MyProfile = () => {
 
     return (
         <div className='mt-12 grid lg:grid-cols-2 sm:grid-cols-1'>
-            <div className="card w-fit bg-base-100 shadow-xl">
+            <div className="card-normal w-fit bg-base-100 shadow-xl ml-6">
                 <div className="card-body items-center text-center"><div className="avatar">
                     <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                         <img className='mt-3 ml-3' style={{ height: '70px', width: '70px' }} src={picture} alt="" />
@@ -83,17 +83,17 @@ const MyProfile = () => {
                 </div>
             </div>
             <div className='text-2xl'>
-                <div className="card w-fit bg-base-100 shadow-xl">
+                <div className="card-normal sm:w-fit bg-base-100 shadow-xl">
                     <div className="card-body">
                         <h1>Update Your Profile</h1>
                         <form onSubmit={handleUpdate}>
-                            <input type="text" name='name' value={user.displayName} disabled placeholder="Type here" className="input input-bordered input-primary w-full max-w-xs" />
-                            <input type="email" name='email' value={user.email} disabled placeholder="Type here" className="input input-bordered input-primary w-full max-w-xs mt-2" />
-                            <input type="text" name='education' placeholder="Education" className="input input-bordered input-primary w-full max-w-xs mt-2" />
-                            <input type="text" name='address' placeholder="Location or City" className="input input-bordered input-primary w-full max-w-xs mt-2" />
-                            <input type="number" name='phone' placeholder="Number" className="input input-bordered input-primary w-full max-w-xs mt-2" />
-                            <input type="text" name='link' placeholder="Your Any Social Link" className="input input-bordered input-primary w-full max-w-xs mt-2" /><br />
-                            <input className='btn btn-primary w-80 mt-2' type="submit" value="UPDATE" />
+                            <input type="text" name='name' value={user.displayName} disabled placeholder="Type here" className="input-sm input-bordered input-primary w-full max-w-xs" />
+                            <input type="email" name='email' value={user.email} disabled placeholder="Type here" className="input-sm input-bordered input-primary w-full max-w-xs mt-2" />
+                            <input type="text" name='education' placeholder="Education" className="input-sm input-bordered input-primary w-full max-w-xs mt-2" />
+                            <input type="text" name='address' placeholder="Location or City" className="input-sm input-bordered input-primary w-full max-w-xs mt-2" />
+                            <input type="number" name='phone' placeholder="Number" className="input-sm input-bordered input-primary w-full max-w-xs mt-2" />
+                            <input type="text" name='link' placeholder="Your Any Social Link" className="input-sm input-bordered input-primary w-full max-w-xs mt-2" /><br />
+                            <input className='btn btn-primary lg:w-80 mt-2' type="submit" value="UPDATE" />
                         </form>
                     </div>
                 </div>
